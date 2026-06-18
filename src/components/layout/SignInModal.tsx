@@ -73,7 +73,6 @@ export function SignInModal({ open, onClose }: SignInModalProps) {
               <Link
                 key={item.label}
                 href={item.href}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-between p-4 rounded-2xl group transition-all cursor-pointer hover:brightness-125 border border-[rgba(59,130,246,0.3)]"
                 style={{
@@ -95,8 +94,7 @@ export function SignInModal({ open, onClose }: SignInModalProps) {
           <p className="text-center text-xs mt-5 text-white/30">
             Don&apos;t have an account?{" "}
             <Link
-              href="https://project-owner.myproject.ai/project-owner/register"
-              target="_blank"
+              href="/"
               rel="noopener noreferrer"
               className="font-semibold text-[rgba(147,197,253,0.9)] hover:underline"
             >

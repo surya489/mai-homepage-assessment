@@ -37,7 +37,6 @@ function MobileNavLink({
           <Link
             key={child.label}
             href={child.href}
-            target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}
             className="flex items-center justify-between px-3 py-2.5 rounded-xl text-sm text-[#003F6B]/80 hover:bg-[#003F6B]/5 transition-colors"
@@ -53,7 +52,6 @@ function MobileNavLink({
   return (
     <Link
       href={link.href}
-      target="_blank"
       rel="noopener noreferrer"
       onClick={onClose}
       className="flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium text-[#003F6B] hover:bg-[#003F6B]/5 transition-colors"
@@ -175,7 +173,6 @@ export function MobileNav({ open, onClose, onSignInClick }: MobileNavProps) {
                 <Link
                   key={action.label}
                   href={action.href}
-                  target="_blank"
                   rel="noopener noreferrer"
                   onClick={onClose}
                   className="flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium text-[#003F6B] hover:bg-[#003F6B]/5 transition-colors"
@@ -193,8 +190,7 @@ export function MobileNav({ open, onClose, onSignInClick }: MobileNavProps) {
           style={{ borderTop: "1px solid rgba(0,63,107,0.09)" }}
         >
           <Link
-            href={`${SITE_BASE}/contact-us`}
-            target="_blank"
+            href={`/`}
             rel="noopener noreferrer"
             onClick={onClose}
             className="flex-1 flex items-center justify-center gap-2 rounded-xl py-2.5 text-xs font-semibold transition-all text-white"

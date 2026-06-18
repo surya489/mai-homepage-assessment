@@ -216,7 +216,6 @@ export function Header() {
                     <Link
                       key={item.label}
                       href={item.href}
-                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-between px-4 py-2.5 text-[14px] font-medium text-white/65 hover:bg-white/6 transition-colors"
                       onClick={() => setSignInDropdownOpen(false)}
@@ -276,7 +275,6 @@ export function Header() {
                 <div key={cta.label} className="flex items-center gap-2">
                   <Link
                     href={cta.href}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 px-3 rounded-full text-white text-[11px] xl:text-[14px] font-medium uppercase tracking-wider cursor-pointer transition-colors"
                   >

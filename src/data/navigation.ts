@@ -7,24 +7,24 @@ export interface NavLink {
 }
 
 export const navLinks: NavLink[] = [
-  { label: "Home", href: `${SITE_BASE}/` },
+  { label: "Home", href: `/` },
   {
     label: "How It Works",
-    href: `${SITE_BASE}/how-it-works/project-owner`,
+    href: `/`,
     children: [
-      { label: "Project Owner", href: `${SITE_BASE}/how-it-works/project-owner` },
-      { label: "Trader", href: `${SITE_BASE}/how-it-works/trader` },
-      { label: "Intern", href: `${SITE_BASE}/how-it-works/intern` },
+      { label: "Project Owner", href: `/` },
+      { label: "Trader", href: `/` },
+      { label: "Intern", href: `/` },
     ],
   },
-  { label: "Projects", href: `${SITE_BASE}/projects` },
-  { label: "Blogs", href: `${SITE_BASE}/blogs` },
+  { label: "Projects", href: `/` },
+  { label: "Blogs", href: `/` },
   {
     label: "Mai Awards",
-    href: `${SITE_BASE}/awards`,
+    href: `/`,
     children: [
-      { label: "Awards", href: `${SITE_BASE}/awards` },
-      { label: "Sponsorship", href: `${SITE_BASE}/awards/sponsorship` },
+      { label: "Awards", href: `/` },
+      { label: "Sponsorship", href: `/` },
     ],
   },
 ];
@@ -34,47 +34,47 @@ export const ctaLinks: {
   shortLabel?: string;
   href: string;
 }[] = [
-  {
-    label: "Post a Project",
-    shortLabel: "Post",
-    href: `${SITE_BASE}/post-a-project`,
-  },
-  {
-    label: "Send Proposals",
-    href: `${SITE_BASE}/projects`,
-  },
-  {
-    label: "Apply Internship",
-    href: `${SITE_BASE}/projects`,
-  },
-];
+    {
+      label: "Post a Project",
+      shortLabel: "Post",
+      href: `/`,
+    },
+    {
+      label: "Send Proposals",
+      href: `/`,
+    },
+    {
+      label: "Apply Internship",
+      href: `/`,
+    },
+  ];
 
 export const loginItems = [
   {
     label: "Project Owner",
-    href: "https://project-owner.myproject.ai/project-owner/login",
+    href: "/",
   },
   {
     label: "Trader",
-    href: "https://trader.myproject.ai/trader/login",
+    href: "/",
   },
   {
     label: "Intern",
-    href: "https://intern.myproject.ai/intern/login",
+    href: "/",
   },
 ];
 
 export const mobileQuickActions = [
   {
     label: "Post Project",
-    href: `${SITE_BASE}/post-a-project`,
+    href: `/`,
   },
   {
     label: "Apply Internship",
-    href: `${SITE_BASE}/projects`,
+    href: `/`,
   },
   {
     label: "Send Proposals",
-    href: `${SITE_BASE}/projects`,
+    href: `/`,
   },
 ];

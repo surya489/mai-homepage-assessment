@@ -435,7 +435,6 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
                   className="flex items-center justify-center w-9 h-9 rounded-full transition-all duration-200 shadow-md hover:scale-110 hover:shadow-lg"
@@ -479,7 +478,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+442080043345"
+                  href="/"
                   className="group flex items-start gap-3 text-[16px] text-white hover:text-white transition-colors duration-200"
                 >
                   <span className="mt-0.5 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-lg bg-[#0077B6]/20 group-hover:bg-[#0077B6]/40 transition-colors duration-200">
@@ -496,7 +495,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@myproject.ai"
+                  href="/"
                   className="group flex items-start gap-3 text-[16px] text-white hover:text-white transition-colors duration-200"
                 >
                   <span className="mt-0.5 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-lg bg-[#0077B6]/20 group-hover:bg-[#0077B6]/40 transition-colors duration-200">

@@ -68,7 +68,7 @@ export function NavDropdown({
                 />
               </button>
             ) : (
-              <Link href={link.href} target="_blank" rel="noopener noreferrer">
+              <Link href={link.href} rel="noopener noreferrer">
                 <span
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg cursor-pointer text-[11px] xl:text-[14px] tracking-wider transition-all"
                   style={{
@@ -104,7 +104,6 @@ export function NavDropdown({
                   <Link
                     key={child.label}
                     href={child.href}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium transition-all text-white/65 hover:bg-white/6"
                   >
