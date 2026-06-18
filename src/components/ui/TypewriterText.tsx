@@ -31,19 +31,20 @@ export function TypewriterText({
       timeout = setTimeout(() => {
         setAnimClass("flip-exit");
         setTimeout(() => {
-          setIsDeleting(true);
+          setDisplayText("");
+          setWordIndex((prev) => (prev + 1) % words.length);
           setAnimClass("flip-enter");
         }, 350);
       }, pauseDuration);
       return () => clearTimeout(timeout);
     }
 
-    if (isDeleting && displayText === "") {
-      setIsDeleting(false);
-      setWordIndex((prev) => (prev + 1) % words.length);
-      setAnimClass("flip-enter");
-      return;
-    }
+    // if (isDeleting && displayText === "") {
+    //   setIsDeleting(false);
+    //   setWordIndex((prev) => (prev + 1) % words.length);
+    //   setAnimClass("flip-enter");
+    //   return;
+    // }
 
     timeout = setTimeout(
       () => {

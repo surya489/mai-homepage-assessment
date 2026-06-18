@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "d2iyhd3v3rvz2k.cloudfront.net",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "dropinblog.net",
+        pathname: "/**",
+      },
     ],
   },
 };

@@ -46,9 +46,9 @@ export function BlogSection() {
           {duplicatedPosts.map((post, index) => (
             <article
               key={`${post.slug}-${index}`}
-              className="group min-w-[280px] md:min-w-[320px] bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 snap-center"
+              className="w-[75vw] shrink-0 snap-center group cursor-pointer relative rounded-xl overflow-hidden shadow-lg h-[350px] transition-all duration-[1000ms] ease-out translate-y-0 opacity-100 scale-100"
             >
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-full overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}

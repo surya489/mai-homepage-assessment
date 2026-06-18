@@ -8,6 +8,7 @@ import { DashboardCard } from "@/components/cards/DashboardCard";
 import { PostcodeCard } from "@/components/cards/PostcodeCard";
 import { WriteWithAiCard } from "@/components/cards/WriteWithAiCard";
 import { useSlider } from "@/hooks/useSlider";
+import { ASSETS } from "@/lib/constants";
 
 const cards = [
   { id: "dashboard", component: DashboardCard },
@@ -30,7 +31,13 @@ export function ToolkitSection() {
   };
 
   return (
-    <section className="relative px-3 sm:px-10 xl:px-24 w-full bg-white font-montserrat">
+    <section className="relative px-3 sm:px-10 xl:px-24 w-full bg-white font-montserrat"
+      style={{
+        backgroundImage: `url('${ASSETS.offcutsBg}')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="w-full py-12 overflow-hidden">
         <AnimatedSection className="text-center mb-10 px-4" delay={300}>
           <SectionBadge>YOUR MAI TOOLKIT</SectionBadge>

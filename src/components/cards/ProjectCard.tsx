@@ -53,8 +53,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute top-4 left-4">
-            <span className="inline-flex items-center rounded-full bg-[#0BA560] px-3 py-1 text-white text-[11px] font-semibold tracking-wide">
+          <div className="absolute top-4 right-4">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#064e3b]/85 backdrop-blur-sm px-3.5 py-1 rounded-full flex items-center shadow-sm text-white text-[11px] font-semibold tracking-wide">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#34d399]"></span>
               {project.status}
             </span>
           </div>

@@ -1,3 +1,5 @@
+import { ASSETS } from "@/lib/constants";
+
 export interface ProjectCard {
   id: string;
   category: string;
@@ -20,8 +22,7 @@ export const projects: ProjectCard[] = [
     location: "East Riding of Yorkshire -England",
     timeline: "Flexible",
     status: "Active",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/projects/projectImages/1781281642529-Screenshot_2026-06-12_172223.png",
+    image: `${ASSETS.project1}`,
     hoverBorder: "hover:border-b-indigo-500",
     hoverShadow: "hover:shadow-[0_20px_40px_-10px_rgba(99,102,241,0.3)]",
   },
@@ -32,8 +33,7 @@ export const projects: ProjectCard[] = [
     location: "Greater London -England",
     timeline: "Flexible",
     status: "Active",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/projects/projectImages/1781281642529-Screenshot_2026-06-12_172223.png",
+    image: `${ASSETS.project2}`,
     hoverBorder: "hover:border-b-rose-500",
     hoverShadow: "hover:shadow-[0_20px_40px_-10px_rgba(244,63,94,0.3)]",
     delay: 150,
@@ -45,8 +45,7 @@ export const projects: ProjectCard[] = [
     location: "Greater London -England",
     timeline: "Flexible",
     status: "Active",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/projects/projectImages/1781281642529-Screenshot_2026-06-12_172223.png",
+    image: `${ASSETS.project3}`,
     hoverBorder: "hover:border-b-amber-500",
     hoverShadow: "hover:shadow-[0_20px_40px_-10px_rgba(245,158,11,0.3)]",
     delay: 300,
@@ -58,8 +57,7 @@ export const projects: ProjectCard[] = [
     location: "Cornwall -England",
     timeline: "Flexible",
     status: "Active",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/projects/projectImages/1781281642529-Screenshot_2026-06-12_172223.png",
+    image: `${ASSETS.project4}`,
     hoverBorder: "hover:border-b-cyan-500",
     hoverShadow: "hover:shadow-[0_20px_40px_-10px_rgba(6,182,212,0.3)]",
     delay: 450,

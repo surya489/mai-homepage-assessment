@@ -23,6 +23,16 @@ export const ASSETS = {
   aiCursor: `${CLOUDFRONT_BASE}/commonFiles/1775715990989-image_2808_(1).png`,
   offcutsBg: `${CLOUDFRONT_BASE}/commonFiles/1775645420451-Frame_2147233451.png`,
   gdprBadge: `${CLOUDFRONT_BASE}/commonFiles/EUGDPRComplaint.png`,
+  project1: `${CLOUDFRONT_BASE}/projects/projectImages/1781714714678-WhatsApp_Image_2026-06-17_at_5.19.22_PM.jpeg`,
+  project2: `${CLOUDFRONT_BASE}/projects/projectImages/1781694575346-bedside_table_rosaline.jpg`,
+  project3: `${CLOUDFRONT_BASE}/projects/projectImages/1781281642529-Screenshot_2026-06-12_172223.png`,
+  project4: `${CLOUDFRONT_BASE}/projects/projectImages/1781180852966-WhatsApp_Image_2026-06-08_at_1.21.05_PM_(1).jpeg`,
+  blog1: "https://dropinblog.net/34255440/files/featured/window-sill-replacement.jpg",
+  blog2: "https://dropinblog.net/34255440/files/featured/stone-sill-care.jpg",
+  blog3: "https://dropinblog.net/34255440/files/featured/window-sill-installation-errors.jpg",
+  blog4: "https://dropinblog.net/34255440/files/featured/window-sill-decor.jpg",
+  blog5: "https://dropinblog.net/34255440/files/featured/how-to-become-a-plumber.jpg",
+  blog6: "https://dropinblog.net/34255440/files/featured/dishwasher-installation-cost.jpg",
 } as const;
 
 export const TYPEWRITER_WORDS = [

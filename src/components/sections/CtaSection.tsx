@@ -12,22 +12,21 @@ export function CtaSection() {
         <AnimatedSection duration={1000}>
           <div className="w-full h-64 md:h-80 md:rounded-4xl rounded-3xl overflow-hidden relative">
             <Image
-              src={ASSETS.ctaBg}
+              src={ASSETS.constructionBg}
               alt="Construction background"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/40" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-5 text-center w-full md:max-w-2xl px-4 z-10">
               <h3 className="text-white text-2xl md:text-4xl font-bold">
                 Ready To Get Started?
               </h3>
-              <p className="text-white/90 text-sm md:text-base max-w-lg">
+              <p className="text-white text-sm md:text-base">
                 Have 10 minutes? Check out our case studies. We&apos;ve been in
                 the industry for more than a decade. So there&apos;s lots of
                 exciting stuff in here.
               </p>
-              <PrimaryButton href="https://www.myproject.ai/signup">
+              <PrimaryButton className="bg-[#fff] !text-black hover:bg-[#fff]" href="https://www.myproject.ai/signup">
                 Sign Up Now
               </PrimaryButton>
             </div>

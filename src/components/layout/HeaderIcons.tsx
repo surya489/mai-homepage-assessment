@@ -1,6 +1,6 @@
 export function SearchIcon({ className = "w-5 h-5" }: { className?: string }) {
   return (
-    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><circle cx="17" cy="17" r="16.5" fill="white" stroke="#EDEDED"></circle><path d="M16.5 23.9968C20.366 23.9968 23.5 20.8628 23.5 16.9968C23.5 13.1308 20.366 9.99683 16.5 9.99683C12.634 9.99683 9.5 13.1308 9.5 16.9968C9.5 20.8628 12.634 23.9968 16.5 23.9968Z" stroke="#003F6B" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.5 12.9968C17.5609 12.9968 18.5783 13.4183 19.3284 14.1684C20.0786 14.9185 20.5 15.936 20.5 16.9968" stroke="#003F6B" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.5 21.9968L24.5 24.9968" stroke="#003F6B" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" className=""><circle cx="17" cy="17" r="16.5" fill="white" stroke="#EDEDED"></circle><path d="M16.5 23.9968C20.366 23.9968 23.5 20.8628 23.5 16.9968C23.5 13.1308 20.366 9.99683 16.5 9.99683C12.634 9.99683 9.5 13.1308 9.5 16.9968C9.5 20.8628 12.634 23.9968 16.5 23.9968Z" stroke="#003F6B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path><path d="M16.5 12.9968C17.5609 12.9968 18.5783 13.4183 19.3284 14.1684C20.0786 14.9185 20.5 15.936 20.5 16.9968" stroke="#003F6B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path><path d="M21.5 21.9968L24.5 24.9968" stroke="#003F6B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
   );
 }
 
@@ -53,7 +53,7 @@ export function ChevronRightIcon({ className = "w-4 h-4" }: { className?: string
 
 export function CloseIcon({ className = "w-5 h-5" }: { className?: string }) {
   return (
-    <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
   );
 }
 
