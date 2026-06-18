@@ -55,7 +55,7 @@ export function HeroSection() {
               </span>
               <TypewriterText />
             </h1>
-            <span className="text-xs sm:text-sm md:text-lg font-light text-white text-center max-w-xl block my-3">
+            <span className="text-xs sm:text-sm md:text-lg font-light text-white text-center max-w-xl block my-3 mx-auto">
               Find Local Trusted Tradespeople in Minutes
             </span>
             <div
