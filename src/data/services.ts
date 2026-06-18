@@ -1,3 +1,5 @@
+import { ASSETS } from "@/lib/constants";
+
 export interface ServiceCategory {
   name: string;
   slug: string;
@@ -8,151 +10,126 @@ export const services: ServiceCategory[] = [
   {
     name: "Worktop & Tile Removal",
     slug: "worktop-tile-removal",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1777217769168-WhatsApp_Image_2026-04-26_at_4.33.39_PM.jpeg",
+    image: ASSETS.serviceCard1,
   },
   {
     name: "Tiles Supplier",
     slug: "tiles-supplier",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1774256673768-tiles.jpg",
+    image: ASSETS.serviceCard2,
   },
   {
     name: "Sinks",
     slug: "sinks",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1773998143717-Sinks.jpg",
+    image: ASSETS.serviceCard3,
   },
   {
     name: "Engineered Stone Installation",
     slug: "engineered-stone-installation",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758780894298-Engineered_Stone_Img.png",
+    image: ASSETS.serviceCard4,
   },
   {
     name: "Natural Stone Installation",
     slug: "natural-stone-installation",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758784183403-granite_countertops_1.png",
+    image: ASSETS.serviceCard5,
   },
   {
     name: "Worktops, Table Tops & Wall Cladding",
     slug: "stone-slab-supplier",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1777131845414-WhatsApp_Image_2026-04-25_at_16.41.31.jpeg",
+    image: ASSETS.serviceCard6,
   },
   {
     name: "Stone Slab & Worktop Transport",
     slug: "stone-slab-worktop-transport",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1777211886671-WhatsApp_Image_2026-04-26_at_2.51.11_PM.jpeg",
+    image: ASSETS.serviceCard7,
   },
   {
     name: "Stone Repairs",
     slug: "stone-repairs",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1774343688560-Stonerepair2.jpg",
+    image: ASSETS.serviceCard8,
   },
   {
     name: "Cladding",
     slug: "cladding-4171",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018043377-Image-min.png",
+    image: ASSETS.serviceCard9,
   },
   {
     name: "Digital Template & Measurment Service",
     slug: "digital-template-measurment-service",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1777217505914-WhatsApp_Image_2026-04-26_at_4.29.11_PM.jpeg",
+    image: ASSETS.serviceCard10,
   },
   {
     name: "Flooring",
     slug: "flooring-3400",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758011328008-Image.png",
+    image: ASSETS.serviceCard11,
   },
   {
     name: "Fire Place Surrounds",
     slug: "fire-place-surrounds",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1777212707461-WhatsApp_Image_2026-04-26_at_3.11.13_PM.jpeg",
+    image: ASSETS.serviceCard12,
   },
   {
     name: "Driveways",
     slug: "driveways-4484",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018171712-Image-min.png",
+    image: ASSETS.serviceCard13,
   },
   {
     name: "Kitchen Installation",
     slug: "kitchen-installation-7868",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758012442626-Image-min.png",
+    image: ASSETS.serviceCard14,
   },
   {
     name: "Dry Stone Walling",
     slug: "dry-stone-walling-3739",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1776435647325-Dry_stone_Walling.jpg",
+    image: ASSETS.serviceCard15,
   },
   {
     name: "KBB Design",
     slug: "kbb-design",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758010656121-Image.png",
+    image: ASSETS.serviceCard16,
   },
   {
     name: "Tiling Services",
     slug: "tiling-services",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018384413-Image-min.png",
+    image: ASSETS.serviceCard17,
   },
   {
     name: "Worktops, Table Tops & Wall Cladding",
     slug: "worktops-table-tops-wall-cladding",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758784183403-granite_countertops_1.png",
+    image: ASSETS.serviceCard18,
   },
   {
     name: "Stone / Slate Tiling",
     slug: "stone-slate-tiling",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018384413-Image-min.png",
+    image: ASSETS.serviceCard19,
   },
   {
     name: "Kitchens",
     slug: "kitchens",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758012442626-Image-min.png",
+    image: ASSETS.serviceCard20,
   },
   {
     name: "Interior Decorating",
     slug: "interior-decorating",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758010656121-Image.png",
+    image: ASSETS.serviceCard21,
   },
   {
     name: "External Wall Insulation",
     slug: "external-wall-insulation",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018043377-Image-min.png",
+    image: ASSETS.serviceCard22,
   },
   {
     name: "Roofing",
     slug: "roofing",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018171712-Image-min.png",
+    image: ASSETS.serviceCard23,
   },
   {
     name: "Monuments",
     slug: "monuments",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1776435647325-Dry_stone_Walling.jpg",
+    image: ASSETS.serviceCard24,
   },
   {
     name: "Internal Wall Insulation",
     slug: "internal-wall-insulation",
-    image:
-      "https://d2iyhd3v3rvz2k.cloudfront.net/category/images/1758018043377-Image-min.png",
+    image: ASSETS.serviceCard25,
   },
 ];

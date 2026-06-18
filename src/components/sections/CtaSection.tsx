@@ -26,7 +26,7 @@ export function CtaSection() {
                 the industry for more than a decade. So there&apos;s lots of
                 exciting stuff in here.
               </p>
-              <PrimaryButton className="bg-[#fff] !text-black hover:bg-[#fff]" href="https://www.myproject.ai/signup">
+              <PrimaryButton className="bg-[#fff] !text-black hover:bg-[#fff]" href="/">
                 Sign Up Now
               </PrimaryButton>
             </div>

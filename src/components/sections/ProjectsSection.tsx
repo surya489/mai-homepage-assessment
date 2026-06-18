@@ -39,7 +39,7 @@ export function ProjectsSection() {
                 From loft conversions in Leeds to boiler installs in Bristol.
               </span>
             </div>
-            <PrimaryButton href="https://www.myproject.ai/projects">
+            <PrimaryButton href="/">
               Explore Projects
             </PrimaryButton>
           </AnimatedSection>

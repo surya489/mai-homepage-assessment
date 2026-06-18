@@ -91,7 +91,7 @@ export function BlogSection() {
 
         <div className="mt-8 flex justify-center">
           <PrimaryButton
-            href="https://www.myproject.ai/blogs"
+            href="/"
             className="px-6"
           >
             View All Blogs

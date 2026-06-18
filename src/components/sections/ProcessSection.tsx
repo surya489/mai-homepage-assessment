@@ -91,7 +91,7 @@ export function ProcessSection() {
             )}
             style={{ transitionDelay: "1400ms" }}
           >
-            <PrimaryButton href="https://www.myproject.ai/post-a-project">
+            <PrimaryButton href="/">
               Post Your Project Now
             </PrimaryButton>
           </div>

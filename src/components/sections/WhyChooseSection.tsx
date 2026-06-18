@@ -149,7 +149,7 @@ export function WhyChooseSection() {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <PrimaryButton href="https://www.myproject.ai/trader-list">
+          <PrimaryButton href="/">
             View All Traders
           </PrimaryButton>
         </div>

@@ -1,3 +1,6 @@
+import { ServiceCard } from "@/components/cards/ServiceCard";
+import { services } from "@/data/services";
+
 export const CLOUDFRONT_BASE = "https://d2iyhd3v3rvz2k.cloudfront.net";
 
 export const SITE_BASE = "https://www.myproject.ai";
@@ -33,6 +36,31 @@ export const ASSETS = {
   blog4: "https://dropinblog.net/34255440/files/featured/window-sill-decor.jpg",
   blog5: "https://dropinblog.net/34255440/files/featured/how-to-become-a-plumber.jpg",
   blog6: "https://dropinblog.net/34255440/files/featured/dishwasher-installation-cost.jpg",
+  serviceCard1: `${CLOUDFRONT_BASE}/category/images/1777217769168-WhatsApp_Image_2026-04-26_at_4.33.39_PM.jpeg`,
+  serviceCard2: `${CLOUDFRONT_BASE}/category/images/1774256673768-tiles.jpg`,
+  serviceCard3: `${CLOUDFRONT_BASE}/category/images/1773998143717-Sinks.jpg`,
+  serviceCard4: `${CLOUDFRONT_BASE}/category/images/1758780894298-Engineered_Stone_Img.png`,
+  serviceCard5: `${CLOUDFRONT_BASE}/category/images/1758784183403-granite_countertops_1.png`,
+  serviceCard6: `${CLOUDFRONT_BASE}/category/images/1777131845414-WhatsApp_Image_2026-04-25_at_16.41.31.jpeg`,
+  serviceCard7: `${CLOUDFRONT_BASE}/category/images/1777211886671-WhatsApp_Image_2026-04-26_at_2.51.11_PM.jpeg`,
+  serviceCard8: `${CLOUDFRONT_BASE}/category/images/1774343688560-Stonerepair2.jpg`,
+  serviceCard9: `${CLOUDFRONT_BASE}/category/images/1758018043377-Image-min.png`,
+  serviceCard10: `${CLOUDFRONT_BASE}/category/images/1777217505914-WhatsApp_Image_2026-04-26_at_4.29.11_PM.jpeg`,
+  serviceCard11: `${CLOUDFRONT_BASE}/category/images/1758011328008-Image.png`,
+  serviceCard12: `${CLOUDFRONT_BASE}/category/images/1777212707461-WhatsApp_Image_2026-04-26_at_3.11.13_PM.jpeg`,
+  serviceCard13: `${CLOUDFRONT_BASE}/category/images/1758018171712-Image-min.png`,
+  serviceCard14: `${CLOUDFRONT_BASE}/category/images/1758012442626-Image-min.png`,
+  serviceCard15: `${CLOUDFRONT_BASE}/category/images/1758010656121-Image.png`,
+  serviceCard16: `${CLOUDFRONT_BASE}/category/images/1758018043377-Image-min.png`,
+  serviceCard17: `${CLOUDFRONT_BASE}/category/images/1758018171712-Image-min.png`,
+  serviceCard18: `${CLOUDFRONT_BASE}/category/images/1776435647325-Dry_stone_Walling.jpg`,
+  serviceCard19: `${CLOUDFRONT_BASE}/category/images/1758018043377-Image-min.png`,
+  serviceCard20: `${CLOUDFRONT_BASE}/category/images/1758012442626-Image-min.png`,
+  serviceCard21: `${CLOUDFRONT_BASE}/category/images/1758010656121-Image.png`,
+  serviceCard22: `${CLOUDFRONT_BASE}/category/images/1758018043377-Image-min.png`,
+  serviceCard23: `${CLOUDFRONT_BASE}/category/images/1758018171712-Image-min.png`,
+  serviceCard24: `${CLOUDFRONT_BASE}/category/images/1776435647325-Dry_stone_Walling.jpg`,
+  serviceCard25: `${CLOUDFRONT_BASE}/category/images/1758018043377-Image-min.png`,
 } as const;
 
 export const TYPEWRITER_WORDS = [
