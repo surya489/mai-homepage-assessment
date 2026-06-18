@@ -22,7 +22,10 @@ export function SliderDots({
           key={index}
           type="button"
           aria-label={`Go to item ${index + 1}`}
-          onClick={() => onSelect(index)}
+          onClick={() => {
+            onSelect(index);
+            console.log("Slider dot clicked, index:", index);
+          }}
           className={cn(
             "h-2 rounded-full transition-all duration-300",
             activeIndex === index

@@ -40,7 +40,7 @@ export function HeaderSearch({
     } else if (typedWord.length < currentWord.length) {
       timeout = setTimeout(() => {
         setTypedWord(currentWord.slice(0, typedWord.length + 1));
-      }, 100);
+      }, 1000);
     } else {
       timeout = setTimeout(() => setIsDeleting(true), 1800);
     }
@@ -78,7 +78,7 @@ export function HeaderSearch({
 
   return (
     <div className={cn("flex flex-col items-center gap-5 w-full", className)}>
-      <div className="flex items-center w-full max-w-md bg-white rounded-full shadow-lg overflow-hidden h-[50px]">
+      <div className="flex items-center w-full bg-white rounded-full shadow-lg overflow-hidden h-[50px]">
         <input
           type="text"
           value={query}
@@ -96,16 +96,16 @@ export function HeaderSearch({
           <button
             type="button"
             onClick={() => setQuery("")}
-            className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-200 hover:bg-gray-300 mr-2 shrink-0"
+            className="flex items-center justify-center w-7 h-7 rounded-full bg-gray-200 hover:bg-gray-300 mr-2 shrink-0 text-white"
             aria-label="Clear search"
           >
-            <span className="text-xs text-gray-600">×</span>
+            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"></path></svg>
           </button>
         ) : null}
         <button
           type="button"
           onClick={handleSearch}
-          className="flex items-center justify-center w-10 h-10 mr-1 rounded-full bg-[#1F5CAC] text-white hover:bg-[#164a8a] transition shrink-0"
+          className="flex items-center justify-center w-10 h-10 mr-1 rounded-full text-white"
           aria-label="Submit search"
         >
           <SearchIcon className="w-4 h-4" />

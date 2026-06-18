@@ -7,10 +7,11 @@ import { SectionBadge } from "@/components/ui/SectionBadge";
 import { ProjectCard } from "@/components/cards/ProjectCard";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { SliderDots } from "@/components/ui/SliderDots";
+import { useSlider } from "@/hooks/useSlider";
 
 export function ProjectsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const { activeIndex, setActiveIndex } = useSlider(scrollRef);
 
   const scrollToIndex = (index: number) => {
     const container = scrollRef.current;

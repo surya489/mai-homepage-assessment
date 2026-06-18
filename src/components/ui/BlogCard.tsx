@@ -22,11 +22,11 @@ export default function BlogCard({ post, height }: BlogCardProps) {
 
             <div className="absolute inset-0 bg-black/20 transition-all duration-700 group-hover:bg-black/40" />
 
-            <div className="absolute bottom-4 left-4 right-4 transition-opacity duration-300 group-hover:opacity-0">
+            {/* <div className="absolute bottom-4 left-4 right-4 transition-opacity duration-300 group-hover:opacity-0">
                 <h3 className="text-white text-2xl font-bold line-clamp-2">
                     {post.title}
                 </h3>
-            </div>
+            </div> */}
 
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#003F6B] to-transparent translate-y-full transition-transform duration-700 ease-in-out group-hover:translate-y-0">
                 <h3 className="text-white font-semibold text-lg line-clamp-2">

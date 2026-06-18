@@ -84,7 +84,7 @@ export function Header() {
   const topRowStyle = showHeroOverlay
     ? {
       background:
-        "linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(15,15,15,0.55) 50%, rgba(0,0,0,0.45) 100%)",
+        "linear-gradient(90deg, #0a1628 0%, #0d1f3c 100%)",
       borderBottom: "1px solid rgba(255,255,255,0.06)",
       backdropFilter: "blur(34px)",
       WebkitBackdropFilter: "blur(34px)",
@@ -278,7 +278,7 @@ export function Header() {
                     href={cta.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 rounded-full text-white text-[11px] xl:text-[14px] font-medium uppercase tracking-wider cursor-pointer hover:bg-white/10 transition-colors"
+                    className="flex items-center gap-1.5 px-3 rounded-full text-white text-[11px] xl:text-[14px] font-medium uppercase tracking-wider cursor-pointer transition-colors"
                   >
                     <Icon className="w-5 h-5" />
                     {"shortLabel" in cta ? (

@@ -7,10 +7,11 @@ import { TestimonialCard } from "@/components/cards/TestimonialCard";
 import { SliderDots } from "@/components/ui/SliderDots";
 import { useInView } from "@/hooks/useInView";
 import { ASSETS } from "@/lib/constants";
+import { useSlider } from "@/hooks/useSlider";
 
 export function TestimonialsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const { activeIndex, setActiveIndex } = useSlider(scrollRef);
   const { ref, isInView } = useInView({ threshold: 0.2 });
 
   const scrollToIndex = (index: number) => {

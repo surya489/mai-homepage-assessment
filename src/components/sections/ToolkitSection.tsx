@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import { ASSETS } from "@/lib/constants";
+import { useRef } from "react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { SliderDots } from "@/components/ui/SliderDots";
 import { DashboardCard } from "@/components/cards/DashboardCard";
 import { PostcodeCard } from "@/components/cards/PostcodeCard";
 import { WriteWithAiCard } from "@/components/cards/WriteWithAiCard";
+import { useSlider } from "@/hooks/useSlider";
 
 const cards = [
   { id: "dashboard", component: DashboardCard },
@@ -18,7 +17,7 @@ const cards = [
 
 export function ToolkitSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const { activeIndex, setActiveIndex } = useSlider(scrollRef);
 
   const scrollToIndex = (index: number) => {
     const container = scrollRef.current;
@@ -29,30 +28,6 @@ export function ToolkitSection() {
       setActiveIndex(index);
     }
   };
-
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      const children = Array.from(container.children) as HTMLElement[];
-      const center = container.scrollLeft + container.clientWidth / 2;
-      let closest = 0;
-      let minDist = Infinity;
-      children.forEach((child, i) => {
-        const childCenter = child.offsetLeft + child.offsetWidth / 2;
-        const dist = Math.abs(center - childCenter);
-        if (dist < minDist) {
-          minDist = dist;
-          closest = i;
-        }
-      });
-      setActiveIndex(closest);
-    };
-
-    container.addEventListener("scroll", handleScroll, { passive: true });
-    return () => container.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <section className="relative px-3 sm:px-10 xl:px-24 w-full bg-white font-montserrat">

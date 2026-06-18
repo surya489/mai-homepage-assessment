@@ -6,6 +6,7 @@ import { CheckCircleIcon } from "@/components/ui/CheckCircleIcon";
 import { TypewriterText } from "@/components/ui/TypewriterText";
 import { useInView } from "@/hooks/useInView";
 import { cn } from "@/lib/utils";
+import { HeaderSearch } from "@/components/layout/HeaderSearch";
 
 const stats = [
   "200K+ Trusted Traders",
@@ -24,7 +25,7 @@ export function HeroSection() {
   return (
     <section
       ref={ref}
-      className="relative h-screen w-full text-white font-montserrat"
+      className="relative h-screen w-full text-white font-montserrat max-h-dvh"
     >
       <div className="w-full h-full flex items-center justify-center">
         <video
@@ -38,7 +39,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[#003F6B4D]" />
         <div className="absolute inset-0 bg-[#00000026]" />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-3 z-10 px-4 pt-24 sm:pt-20 lg:pt-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-3 z-10 px-4 pt-0 sm:pt-20 lg:pt-4">
           <div
             className={cn(
               "w-full pt-4 transition-all duration-1000 ease-out",
@@ -49,14 +50,21 @@ export function HeroSection() {
             style={{ transitionDelay: "100ms" }}
           >
             <h1 className="font-bold text-white flex flex-col md:flex-row items-center justify-center gap-x-3 gap-y-2 leading-tight text-center">
-              <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl ">
                 We Find You The
               </span>
               <TypewriterText />
             </h1>
-            <span className="text-xs sm:text-sm md:text-lg font-light text-white text-center max-w-xl block mt-3">
+            <span className="text-xs sm:text-sm md:text-lg font-light text-white text-center max-w-xl block my-3">
               Find Local Trusted Tradespeople in Minutes
             </span>
+            <div
+              className={cn(
+                "m-auto lg:flex px-3 w-full max-w-xl md:max-w-[680px] transition-all duration-500 opacity-100 pointer-events-auto"
+              )}
+            >
+              <HeaderSearch isHeader={false} />
+            </div>
           </div>
 
           <div

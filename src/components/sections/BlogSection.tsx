@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { blogPosts } from "@/data/blogPosts";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -8,17 +8,18 @@ import { SectionBadge } from "@/components/ui/SectionBadge";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { SliderDots } from "@/components/ui/SliderDots";
 import BlogCard from "../ui/BlogCard";
+import { useSlider } from "@/hooks/useSlider";
 
 export function BlogSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
   const duplicatedPosts = [...blogPosts, ...blogPosts];
+  const { activeIndex, setActiveIndex } = useSlider(scrollRef);
 
   const scrollToIndex = (index: number) => {
     const container = scrollRef.current;
     if (!container) return;
     const card = container.children[index] as HTMLElement;
-    card?.scrollIntoView({ behavior: "smooth", inline: "center" });
+    card?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
     setActiveIndex(index);
   };
 
