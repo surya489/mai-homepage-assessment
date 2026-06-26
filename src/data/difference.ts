@@ -4,6 +4,7 @@ export interface DifferenceItem {
   title: string;
   description: string;
   animationClass: string;
+  cardAnimation?: string;
 }
 
 export const differenceItems: DifferenceItem[] = [
@@ -15,6 +16,8 @@ export const differenceItems: DifferenceItem[] = [
       "Stop sifting through hundreds of irrelevant trader profiles. MAI's intelligent matching engine notifies your project with every qualified tradespeople whose skills, availability, location and work style align precisely with your project.",
     animationClass:
       "border-b md:border-r",
+    cardAnimation:
+      "translate-x-120 translate-y-20"
   },
   {
     number: "02",
@@ -24,6 +27,8 @@ export const differenceItems: DifferenceItem[] = [
       "From milestones to payments, every stage of your project lives in one place. MAI's real-time dashboard gives you complete visibility over progress, budgets, and deliverables, eliminating the back-and-forth that slows projects down.",
     animationClass:
       "border-b",
+    cardAnimation:
+      "-translate-x-120 translate-y-20"
   },
   {
     number: "03",
@@ -33,6 +38,8 @@ export const differenceItems: DifferenceItem[] = [
       "Your investment is protected at every step. MAI's secured payment system releases funds only when agreed milestones are met and approved, giving both project owners and professionals the security to focus on doing great work.",
     animationClass:
       "border-b md:border-b-0 md:border-r",
+    cardAnimation:
+      "translate-x-120 translate-y-20"
   },
   {
     number: "04",
@@ -41,5 +48,7 @@ export const differenceItems: DifferenceItem[] = [
     description:
       "Every professional on MAI is rigorously reviewed, verified, and rated by the community. You're not hiring blindly, you're choosing from a trusted network of proven experts backed by real project history, reviews, and credentials.",
     animationClass: "border-b-0",
+    cardAnimation:
+      "-translate-x-100 -translate-y-40"
   },
 ];

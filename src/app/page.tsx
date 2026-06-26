@@ -5,7 +5,6 @@ import { ProcessSection } from "@/components/sections/ProcessSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { StoneOffcutsSection } from "@/components/sections/StoneOffcutsSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-import { DifferenceSection } from "@/components/sections/DifferenceSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CtaSection } from "@/components/sections/CtaSection";
@@ -21,7 +20,6 @@ export default function HomePage() {
       <ProjectsSection />
       <StoneOffcutsSection />
       <WhyChooseSection />
-      <DifferenceSection />
       <BlogSection />
       <TestimonialsSection />
       <CtaSection />
